@@ -1,0 +1,39 @@
+[alias]
+st = status
+ci = commit
+co = checkout
+br = branch
+df = diff
+lg = log -p
+ls = ls-files
+[user]
+	name = Tamas Amon
+	email = sajtango@gmail.com
+[color]
+ui = auto
+[color "branch"]
+current = green bold
+local = blue
+remote = red
+[color "diff"]
+meta = yellow bold
+frag = magenta bold
+old = red bold
+new = green bold
+whitespace = red reverse
+[color "status"]
+added = green
+changed = blue
+untracked = red
+[core]
+whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+excludesfile = /Users/sajt/.gitignore_global
+editor = vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[credential]
+	helper = osxkeychain
