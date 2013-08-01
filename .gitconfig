@@ -1,11 +1,12 @@
 [alias]
-st = status
+st = status -s
 ci = commit
 co = checkout
 br = branch
 df = diff
 lg = log -p
 ls = ls-files
+unstage = reset HEAD 
 [user]
 	name = Tamas Amon
 	email = sajtango@gmail.com
