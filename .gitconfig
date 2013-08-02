@@ -1,8 +1,8 @@
 [alias]
-st = status -s
+st = status -s #only the short one
 ci = commit
 co = checkout
-br = branch
+br = branch -v #The last commit message
 df = diff
 lg = log -p
 ls = ls-files
